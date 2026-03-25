@@ -16,7 +16,7 @@ public class BorderLayoutExample {
         BorderFrame = new JFrame("BorderLayout Example");
         BorderFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         BorderFrame.setLayout(new GridLayout(1, 4));
-        BorderFrame.setJMenuBar(this.CreateJMenuBar());
+//        BorderFrame.setJMenuBar(this.CreateJMenuBar());
         BorderFrame.add(JPanelsClass.CreateJPanelOne());
         BorderFrame.add(JPanelsClass.CreateJPanelTwo());
         BorderFrame.add(JPanelsClass.CreateJPanelThree());
@@ -25,11 +25,11 @@ public class BorderLayoutExample {
         BorderFrame.setVisible(true);
     }
 
-    public JMenuBar CreateJMenuBar(){
-        BorderMenuBar = new JMenuBar();
-        BorderMenuBar.add(this.CreateJMenuOne());
-        return BorderMenuBar;
-    }
+//    public JMenuBar CreateJMenuBar(){
+//        BorderMenuBar = new JMenuBar();
+//        BorderMenuBar.add(this.CreateJMenuOne());
+//        return BorderMenuBar;
+//    }
 
     public JMenu CreateJMenuOne(){
         BorderJMenuOne = new JMenu("Menu One");
